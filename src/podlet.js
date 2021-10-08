@@ -15,7 +15,7 @@ const podlet = new Podlet({
 app.use(podlet.middleware());
 
 app.get(podlet.content(), (req, res) => {
-  res.status(200).podiumSend(`<h1>Hello from ${config.get('name')}</h1>`);
+  res.status(200).podiumSend(`<h1>Hello from beta</h1>`);
 });
 
 app.get(podlet.manifest(), (req, res) => {
